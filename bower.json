@@ -1,0 +1,36 @@
+{
+  "name": "monterey",
+  "description": "Bath Brand Site Project",
+  "main": "index.js",
+  "authors": [
+    "Dmitry Soloshenko"
+  ],
+  "license": "ISC",
+  "keywords": [
+    "Monterey",
+    "Bath",
+    "Brand",
+    "Site",
+    "Powered",
+    "by",
+    "WordPress"
+  ],
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "^2.2.4",
+    "bootstrap-sass": "^3.3.6",
+    "modernizr": "^3.3.1",
+    "animate.css": "https://github.com/daneden/animate.css.git#^3.5.1",
+    "hover": "Hover#^2.0.2",
+    "motion-ui": "^1.2.2",
+    "typographic": "^2.9.3",
+    "bourbon": "^4.2.7"
+  }
+}
