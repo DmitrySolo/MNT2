@@ -1,7 +1,7 @@
-var jadeFile = "Build/jade_templates/layout.jade";
-var targetHtml = "Production/MainPage/index.html";
-var targetCSS = "Production/MainPage/main.css";
-var scssFiles = "Build/SASS/*/*.scss";
+var jadeMain = "Build/Jade/layout.jade";
+var targetHtml = "Production/Pages/main.html";
+var targetCSS = "Production/main.css";
+var scssFiles = "Build/SASS/*";
 
 module.exports = function(grunt) {
     // Do grunt-related things in here
@@ -12,7 +12,7 @@ module.exports = function(grunt) {
             },
             compile: {
                 files: {
-                    "Production/MainPage/index.html" : jadeFile
+                    "Production/Pages/main.html" : jadeMain
                 }
             }
         },
@@ -22,18 +22,18 @@ module.exports = function(grunt) {
                     style: 'expanded'
                 },
                 files: {                         // Dictionary of files
-                    'Production/MainPage/main.css': 'Build/SASS/main.scss'
+                    'Production/main.css': 'Build/SASS/main.scss'
                 }
             }
         },
         watch: {
             jade: {
                 // We watch and compile sass files as normal but don't live reload here
-                files: ['Build/jade_templates/*/*.jade'],
+                files: ['Build/Jade/*.jade','Build/Jade/*/*.jade','Build/Jade/Pages/*/*.jade','Build/Jade/*/*.jade'],
                 tasks: ['jade'],
             },
             sass: {
-                files: [scssFiles],
+                files: ['Build/SASS/*.scss','Build/SASS/*/*.scss'],
                 tasks: ['sass']
             },
             livereload: {
