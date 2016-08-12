@@ -1,13 +1,12 @@
 @import "variables";
 /*Normolize*/
 @import '../../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/normalize';
-/*BoxSizing*/
-* {
-  box-sizing: border-box;
-  background-color: #7fd936;
-  color: $mainBlue;
-  font-size: 252px;
-}
 /*Typography*/
+@import "typography";
 /*Layout*/
+@import "layout";
+/*Header*/
+@import "Blocks/header";
+/*Slider*/
+@import "Blocks/slider";
 /*Forms*/

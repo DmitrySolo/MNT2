@@ -1,0 +1,8 @@
+@import "../../bower_components/typographic/scss/typographic";
+$body-color : $mainBlue;
+$body-font : Open Sans, sans-serif;
+$body-font-weight : 400;
+$header-color : $mainBlue;
+$header-font : Open Sans, sans-serif;
+$header-font-weight : 600;
+@include typographic();
