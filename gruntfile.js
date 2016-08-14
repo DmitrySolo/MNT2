@@ -29,7 +29,7 @@ module.exports = function(grunt) {
         watch: {
             jade: {
                 // We watch and compile sass files as normal but don't live reload here
-                files: ['Build/Jade/*.jade','Build/Jade/*/*.jade','Build/Jade/Pages/*/*.jade','Build/Jade/*/*.jade'],
+                files: ['Build/Jade/*.jade','Build/Jade/*/*.jade','Build/Jade/Pages/*/*.jade','Build/Jade/*/*.jade','Build/Jade/includes/blocks/*.jade'],
                 tasks: ['jade'],
             },
             sass: {

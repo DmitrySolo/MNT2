@@ -10,12 +10,17 @@ header {
   font-size: 0;
 }
 header .logo {
+ // position: relative;
   background-color: $mainBlue;
   background-image: url("images/monterey_logo.svg");
   width: 140px;
   background-size: 98%;
   background-repeat: no-repeat;
   background-position: 50% 49%;
+  h1 {
+    position: absolute;
+    text-indent: -5000em;
+  }
 }
 nav{
   margin: 0 auto;
@@ -49,6 +54,7 @@ header .search {
   color: $mainBlue;
   vertical-align: text-bottom;
   padding: 50px  0 50px  100px;
+  cursor: pointer;
 }
 header .logo:hover,
 .mark--where_buy a:hover {

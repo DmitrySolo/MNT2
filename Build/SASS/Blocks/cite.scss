@@ -1,0 +1,23 @@
+.cite_container {
+  background-color: $gray;
+  blockquote{
+    position: relative;
+    margin: 0;
+    padding: 60px 40px;
+    &:before {
+      content: "\201c";
+      color: $orange;
+      font-size: 120px;
+      position: absolute;
+      left: -20px;
+    }
+    &:after {
+      content: "\201d";
+      color: $orange;
+      font-size: 120px;
+      position: absolute;
+      right: -10px;
+      bottom: 10px;
+    }
+  }
+}

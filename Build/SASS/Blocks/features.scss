@@ -1,0 +1,22 @@
+.features {
+  margin-top:35px;
+}
+.feature__container {
+  float: left;
+  width: 33.3333%;
+}
+.feature__image_container {
+  width: 100%;
+  text-align: center;
+  height: 120px;
+}
+.feature__title {
+  font-size: 1.2em;
+  margin: 0 auto;
+  text-align: center;
+  display: block;
+  width: 85%;
+  padding: 4px 12px;
+  background-color: $orange;
+  color: #fff;
+}
