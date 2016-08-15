@@ -1,6 +1,7 @@
 .catalog{
   font-size: 0;
   vertical-align: middle;
+  margin-bottom:25px;
 }
 .catalog__category {
   //display: inline-block;
@@ -29,4 +30,108 @@
 .catalog__category--selected {
   background: $mainBlue;
   color: #fff;
+}
+.catalog__item {
+  display: inline-block;
+  margin-top: -1px;
+  border: 1px solid $mainBlue;
+  padding-bottom: 20px;
+  width: 50%;
+  font-size: 1rem;
+  border-right: none;
+  background-image: url("images/monterey_logo_f0.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  &:nth-child(even){
+    border-right: 1px solid $mainBlue;
+  }
+}
+.catalog__item__charsOption,
+.catalog__item__photoTitle {
+  display: inline-block;
+}
+.catalog__item__photoTitle {
+  width: 60%;
+}
+.catalog__item__charsOption{
+  width: 39%;
+  padding: 10px;
+  vertical-align: text-bottom;
+  background-color: rgba(255,255,255,.6);
+  dl {
+    margin-bottom: 0;
+  }
+  dt,dd {
+    display: inline-block;
+    width: 45%;
+    margin-bottom: 5px;
+  }
+  dd {
+    text-align: right;
+    position: relative;
+    &:before{
+      content: ".........";
+      position: absolute;
+      left:-60%;
+      top:-15%;
+
+      width: 100%;
+      height: 2px;
+     // border-top: 3px dotted $mainBlue;
+    }
+  }
+}
+.catalog__item__title {
+  h5{
+    margin: 0 auto;
+    width: 75%;
+    text-align: center;
+    position: relative;
+    color: #fff;
+    padding: 15px 30px;
+    text-transform: uppercase;
+    background-color: $mainBlue;
+    span {
+      position: absolute;
+      right: 0;
+      top:-52px;
+      display: block;
+      padding: 0px 15px;
+      background-color: $orange;
+      font-size: .8em;
+    }
+
+  }
+}
+.catalog__item__photoContainer {
+  //background-color: #00b3ee;
+  height: 300px;
+  width: 100%;
+  background-image: url("images/catalog/photo3.png");
+  background-repeat: no-repeat;
+  background-size: 90%;
+  background-position: center;
+}
+.catalog__item__options {
+  font-size: 0;
+  margin-top: 10px;
+  border-top: 2px solid $mainBlue;
+}
+.catalog__item__option {
+  display: inline-block;
+  width: 33.33333333%;
+  height: 60px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+.catalog__item__option--hydro{
+  background-image: url("images/catalog/hydro.png");
+}
+.catalog__item__option--chrom{
+  background-image: url("images/catalog/chrom.png");
+}
+.catalog__item__option--plum{
+  background-image: url("images/catalog/plum.png");
 }

@@ -37,6 +37,10 @@ header nav li {
   padding: 50px;
   vertical-align: text-bottom;
   text-transform: uppercase;
+  a {
+    position: relative;
+    cursor: pointer;
+  }
 }
 .mark--where_buy {
   padding: 50px 35px;
@@ -62,4 +66,41 @@ header .logo:hover,
 }
 header .search:hover{
   color: $subBlue;
+}
+/*SOME MENU BRACKETS EFFECT*/
+.cl-effect-1 a::before,
+.cl-effect-1 a::after {
+  display: inline-block;
+  opacity: 0;
+  -webkit-transition: -webkit-transform 0.3s, opacity 0.2s;
+  -moz-transition: -moz-transform 0.3s, opacity 0.2s;
+  transition: transform 0.3s, opacity 0.2s;
+}
+
+.cl-effect-1 a::before {
+  position: absolute;
+  right: -20px;
+  content: ']';
+  -webkit-transform: translateX(20px);
+  -moz-transform: translateX(20px);
+  transform: translateX(20px);
+}
+
+.cl-effect-1 a::after {
+  position: absolute;
+  left: -20px;
+  content: '[';
+  -webkit-transform: translateX(-20px);
+  -moz-transform: translateX(-20px);
+  transform: translateX(-20px);
+}
+
+.cl-effect-1 a:hover::before,
+.cl-effect-1 a:hover::after,
+.cl-effect-1 a:focus::before,
+.cl-effect-1 a:focus::after {
+  opacity: 1;
+  -webkit-transform: translateX(0px);
+  -moz-transform: translateX(0px);
+  transform: translateX(0px);
 }

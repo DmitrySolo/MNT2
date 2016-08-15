@@ -1,0 +1,18 @@
+footer {
+  background-color: $mainBlue;
+  background-image: url("images/monterey_logo.svg");
+  background-size: 14%;
+  background-position: center 35%;
+  background-repeat: no-repeat;
+  padding-top: 200px;
+  padding-bottom: 70px;
+  .container{
+    margin-bottom: 0;
+  }
+  p {
+    font-size: .7em;
+    color:#fff;
+    margin: 0;
+    text-align: center;
+  }
+}
