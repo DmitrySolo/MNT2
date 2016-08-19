@@ -1,0 +1,14 @@
+.breadcrumbs {
+  margin-top: 1em;
+  font-size: .95rem;
+  a {
+    margin-right: 20px;
+    &:after{
+      content: "/";
+      padding-left: 20px;
+    }
+    &:last-child:after{
+      content: "";
+    }
+  }
+}

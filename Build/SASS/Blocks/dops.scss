@@ -1,0 +1,132 @@
+.dops__wrapper {
+  background-color: $gray;
+  background-image: url("images/tiny_grid.png");
+}
+.dops__menu,.dops__info_container {
+  display: inline-block;
+  vertical-align: top;
+}
+.dops {
+  background-color: #fff;
+  font-size: 0;
+  border: 1px solid $mainBlue;
+  .dops__menu {
+    width: 35%;
+    padding: 0;
+    margin: 0;
+    li {
+      font-size: 1rem;
+      list-style: none;
+      border-bottom:1px solid $mainBlue;
+      //border-right: 1px solid $mainBlue;
+      //margin-top: -1px;
+      padding: 10px;
+    }
+  }
+  .dops__menu--selected {
+    background-color: $mainBlue;
+    color: #fff;
+  }
+}
+.dops__info_container {
+ // border: 1px solid $mainBlue;
+  border-left: 1px solid $mainBlue;
+  height: auto;
+  width: 65%;
+  margin-top: -1px;
+  padding: 15px;
+  font-size: 0;
+  h5 {
+    margin: 0;
+  }
+  h6 {
+    margin-top: 1.2em;
+  }
+}
+.dops__info_complects {
+  padding-bottom: 15px;
+  border-bottom: 1px solid $mainBlue;
+}
+.dops__info_dops {
+  font-size: .7rem;
+  position: relative;
+  &:before{
+    content: "+";
+    position: absolute;
+    top: -20px;
+    left: 50%;
+    display: block;
+    width: 40px;
+    height: 40px;
+    border:1px solid $mainBlue;
+    text-align: center;
+    vertical-align: middle;
+    border-radius: 50%;
+    font-size: 45px;
+    color: #fff;
+    background: #02202a;
+    margin-left: -20px;
+  }
+}
+.dops__info_description,
+.dops__info_graphyc {
+  display: inline-block;
+  vertical-align: middle;
+  font-size: .7rem;
+  height: 400px;
+}
+.dops__info_graphyc {
+  width: 40%;
+}
+.dops__info_description {
+  ul li {
+    font-style: italic;
+  }
+  width: 60%;
+  table {
+    margin-bottom: 1.1em;
+  }
+  tr:nth-child(even){
+    background-color: $gray;
+  }
+  tr:last-child{
+    border-bottom: 1px solid $gray;
+  }
+  td {
+    padding: 0;
+  }
+}
+.dops__info_dops {
+  font-size: 0;
+  ul {
+    padding: 0;
+    margin: 0;
+  }
+  ul li{
+    display: inline-block;
+    list-style: none;
+    padding-top: 180px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    //margin-right: 10px;
+    border-right: 1px solid $gray;
+    min-width: 180px;
+    span {
+      color: #fff;
+      background-color: $mainBlue;
+      display: inline-block;
+      width: 100%;
+      text-align: center;
+      font-size: .7rem;
+    }
+  }
+}
+.dops__info_dop--back1 {
+  background-image: url("images/catalog/back_hydro.png");
+}
+.dops__info_dop--back2 {
+  background-image: url("images/catalog/back_shia.png");
+}
+.dops__info_dop--back3 {
+  background-image: url("images/catalog/back_revs.png");
+}

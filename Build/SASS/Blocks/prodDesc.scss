@@ -1,0 +1,20 @@
+.prod__description_wrapper {
+  margin-top: 20px;
+  background-color: $gray;
+  padding: 55px 35px 35px 35px;
+}
+.product__description_description {
+  text-align: justify;
+  //color: #fff;
+}
+.product__order {
+  button {
+    margin: 0 auto;
+    margin-bottom: 20px;
+    border: none;
+    background-color: $orange;
+    min-width: 200px;
+    text-transform: uppercase;
+    color: #ffffff;
+  }
+}

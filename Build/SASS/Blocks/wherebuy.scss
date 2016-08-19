@@ -1,0 +1,48 @@
+.wherebuy__select_container {
+  select {
+    border:none;
+    background-color: #d8e5ec;
+    min-width: 200px;
+    min-height: 100px;
+  }
+}
+.wherebuy__table{
+  padding: 25px 0;
+  font-size: 0;
+}
+.wherebuy__table_header {
+  .wherebuy__table_section{
+    background-color: $mainBlue;
+    border-left: 1px solid $gray;
+    &:first-child{
+    border-left-color: $mainBlue;
+    }
+    h6 {
+      color: #ffffff;
+      margin: 0;
+      padding: 0;
+      text-transform: uppercase;
+      display: inline;
+    }
+  }
+}
+.wherebuy__table_rows {
+  &:nth-child(odd){
+    background-color: lighten($gray,6%);
+  }
+  .wherebuy__table_section{
+    border-bottom: 1px solid $gray;
+    border-left: 1px solid $gray;
+    &:nth-child(3){
+      border-right: 1px solid $gray;
+    }
+  }
+}
+.wherebuy__table_section {
+  display: inline-block;
+  font-size: 1rem;
+  width: 33.3333%;
+  height: 90px;
+  line-height: 90px;
+  text-align: center;
+}

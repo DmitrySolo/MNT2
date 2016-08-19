@@ -2,8 +2,9 @@ doctype html
 html
     include head
     body
-        .container
-            include includes/header
+        .header_wrapper
+            .container
+                include includes/header
         .wrapper
             include includes/blocks/slide
         .container
@@ -12,4 +13,6 @@ html
             include includes/Pages/main/cite
         .container
             include includes/blocks/catalog
+        .wrapper
+            include includes/blocks/dops
          include includes/footer

@@ -12,7 +12,9 @@ module.exports = function(grunt) {
             },
             compile: {
                 files: {
-                    "Production/Pages/main.html" : jadeMain
+                    "Production/Pages/main.html" : jadeMain,
+                    "Production/Pages/catalog.html" : "Build/Jade/catalogPage.jade",
+                    "Production/Pages/whereBuy.html" : "Build/Jade/wherebuy.jade",
                 }
             }
         },

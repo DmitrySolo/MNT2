@@ -1,7 +1,7 @@
 .slider {
-  border-top: 3px solid $mainBlue;
+  //border-top: 3px solid $mainBlue;
   //border-bottom: 3px solid $mainBlue;
-  height: 420px;
+  height: 500px;
   margin: 0 auto;
 }
 .montereySlider {
@@ -18,7 +18,7 @@
   }
   .slide{
     position: absolute;
-    height: 420px;
+    height: 500px;
     width: 100%;
     background-repeat:no-repeat;
     background-size: cover;
@@ -73,8 +73,8 @@
   background-image: url("images/slider/slide3.jpg");
 }
 .slide--2 {
-  background-image: url("images/slider/agra.jpg");
+  background-image: url("images/slider/slide2.jpg");
 }
 .slide--3 {
-  background-image: url("images/slider/kleo.jpg");
+  background-image: url("images/slider/slide23.jpg");
 }

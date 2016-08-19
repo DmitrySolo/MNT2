@@ -7,7 +7,6 @@
           <resourceRoots>
             <path value="file://$PROJECT_DIR$/Production/images" />
             <path value="file://$PROJECT_DIR$/bower_components" />
-            <path value="file://$PROJECT_DIR$/Production" />
           </resourceRoots>
         </entryData>
       </entry>

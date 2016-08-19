@@ -1,0 +1,108 @@
+.product{
+  //height: 600px;
+  background-image: url("images/monterey_logo_f9.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center center;
+}
+.product__title {
+  text-transform: uppercase;
+  margin: 0 auto;
+  min-width: 600px;
+  font-size: 0;
+  text-align: center;
+  vertical-align: top;
+  margin-bottom: 25px;
+
+  h2,p {
+    margin: 0;
+    display: inline-block;
+    color: #fff;
+    line-height: 2.1;
+    text-align: center;
+
+  }
+  h2 {
+    background-color: $mainBlue;
+    //padding: 10px 50px;
+    min-width: 350px;
+  }
+  p {
+    min-width: 250px;
+    background-color: $orange;
+    margin: 0;
+    font-size: 1.96rem;
+    font-weight: bold;
+    span{
+      font-size: 1rem;
+    }
+  }
+}
+.product__info_wrapper {
+  font-size: 0;
+}
+.product__Image_container{
+  height: 600px;
+  background-image: url(images/catalog/photo3.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center center;
+}
+.product__info,
+.product__Image_container,
+.product__sup_photoes {
+  vertical-align: top;
+  display: inline-block;
+  font-size: 0;
+}
+.product__info {
+  width: 17%;
+}
+.product__Image_container {
+  width: 66%;
+}
+.product__sup_photoes {
+  width: 17%;
+}
+.product__info__charsOption {
+  font-size: 0;
+  dt,dd {
+    display: inline-block;
+    width: 50%;
+    font-size: 16px;
+  }
+  dd {
+    text-align: right;
+    position: relative;
+    &:before{
+      content: "...........";
+      position: absolute;
+      left:-70%;
+      top:-15%;
+      color: $orange;
+
+      width: 100%;
+      height: 2px;
+      // border-top: 3px dotted $mainBlue;
+    }
+  }
+  ul {
+    padding-left: 20px;
+  }
+  ul li {
+    padding-left: 10px;
+    font-size: 16px;
+    color: $orange;
+    span {
+      color: $mainBlue;
+    }
+  }
+}
+.product__sup_photoes {
+  img {
+    width: 100%;
+  }
+}
+.product__sup_photoes {
+  padding-top: 1.85rem;
+}
